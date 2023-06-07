@@ -1,0 +1,5 @@
+flask
+openai
+load_dotenv
+requests
+os
