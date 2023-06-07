@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Health Condition Helpdesk</title>
+</head>
+<body>
+    <h1>Health Condition Helpdesk</h1>
+    <form method="POST" action="{{url_for('chatbot')}}">
+        <label for="health_condition">Health Condition:</label>
+        <select id="health_condition" name="health_condition">
+            <option value="headache">Headache</option>
+            <option value="stomachache">Stomachache</option>
+            <option value="back pain">Back Pain</option>
+        </select>
+        <br>
+        <label for="severity">Severity:</label>
+        <select id="severity" name="severity">
+            <option value="mild">Mild</option>
+            <option value="moderate">Moderate</option>
+            <option value="severe">Severe</option>
+        </select>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
